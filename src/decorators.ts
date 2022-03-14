@@ -43,3 +43,15 @@ export const METADATA_DECORATORS: DTODecoratorFactories = Object.keys(NOOP_DECOR
     }),
     {} as DTODecoratorFactories,
 );
+
+export const {
+    IsBoolean,
+    IsDate,
+    IsDateString,
+    IsEnum,
+    IsInteger,
+    IsNested,
+    IsNumber,
+    IsString,
+    IsUUID,
+} = METADATA_DECORATORS;
