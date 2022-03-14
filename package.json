@@ -1,6 +1,6 @@
 {
     "name": "@hippo-oss/metadata-decorators",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "DTO decorators with reflect-metadata.",
     "main": "./dist/index.js",
     "repository": "https://github.com/hippo-oss/metadata-decorators",
@@ -10,7 +10,7 @@
     "types": "dist/index.d.ts",
     "files": [
         "dist",
-        "*.d.ts"
+        "src"
     ],
     "scripts": {
         "build": "tsc --build tsconfig.build.json",
