@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`decorators define Address properties 1`] = `
+Object {
+  "city": Object {
+    "name": "IsString",
+    "options": Object {
+      "description": "The address's city.",
+      "example": "Washington",
+      "optional": false,
+    },
+  },
+  "id": Object {
+    "name": "IsUUID",
+    "options": Object {
+      "description": "The address's persistent id",
+      "example": "00000000-0000-4000-8000-000000000000",
+      "optional": true,
+    },
+  },
+  "location": Object {
+    "name": "IsNested",
+    "options": Object {
+      "description": "The location of the address.",
+      "optional": true,
+      "type": [Function],
+    },
+  },
+  "state": Object {
+    "name": "IsEnum",
+    "options": Object {
+      "description": "The address's state.",
+      "enum": Object {
+        "CA": "CA",
+        "DC": "DC",
+        "TX": "TX",
+      },
+      "enumName": "State",
+      "example": "DC",
+      "optional": false,
+    },
+  },
+  "street": Object {
+    "name": "IsString",
+    "options": Object {
+      "description": "The address's street location",
+      "example": "1600 Pennsylvania Ave",
+      "optional": false,
+    },
+  },
+  "zipcode": Object {
+    "name": "IsString",
+    "options": Object {
+      "description": "The address's zipcode.",
+      "example": "20500-0004",
+      "optional": false,
+      "pattern": /\\[0-9\\]\\{5\\}\\(-\\[0-9\\]\\{4\\}\\)\\?/,
+    },
+  },
+}
+`;
+
+exports[`decorators define Location properties 1`] = `
+Object {
+  "latitude": Object {
+    "name": "IsNumber",
+    "options": Object {
+      "description": "The latitude of the location",
+      "example": 38.89789,
+      "maxValue": 90,
+      "minValue": -90,
+      "optional": false,
+    },
+  },
+  "longitude": Object {
+    "name": "IsNumber",
+    "options": Object {
+      "description": "The longitude of location.",
+      "example": -77.03651,
+      "maxValue": 180,
+      "minValue": -180,
+      "optional": true,
+    },
+  },
+}
+`;
